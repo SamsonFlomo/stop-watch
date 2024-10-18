@@ -1,3 +1,183 @@
+:root {
+  --txt-bg: #6C3214;
+  --cl-color: rgba(143, 149, 150, 0.5);
+  --tm-color: rgba(108, 50, 20, 0.69);
+  --btn-color: #f58813
+}
+
+
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 3rem auto;
+  font-size: 2rem;
+  background-color: var(--txt-bg);
+  padding: .5rem 3rem;
+}
+  
+.clock-timers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
+  background-color: blue;
+  height: 60vh;
+  gap: .2rem;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: var(--cl-color);
+}
+
+.sm-bg {
+  padding: 1rem;
+  background-color: var(--tm-color);
+  border-radius: 50%;
+  padding-top: 20%;
+}
+
+h4 {
+  width: 100%;
+  font-size: 90%;
+  font-weight: 700;
+}
+
+.hold-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+span {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+button {
+  border: none;
+  font-size: 100%;
+  font-weight: bold;
+  padding: .2rem;
+  width: 30%;
+  height: 25%;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  color: #fff;
+}
+
+.border-btn {
+  border: 2px solid var(--btn-color);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.border-btn:hover {
+  border-color: #fff;
+  color: var(--btn-color);
+}
+
+
+.display {
+  grid-column: span 2;
+}
+
+.display button:hover {
+  background-color: #fff;
+  color: var(--btn-color);
+}
+
+#timer-label {
+  font-size: 250%;
+  margin-button: -.4rem;
+}
+
+#time-left {
+  padding-bottom: .2rem;
+}
+
+
+footer {
+  width: 100%;
+  position: absolute;
+  top: 95%;
+  right: 3%;
+}
+
+address {
+  float: right; 
+  font-size: .5rem;
+  background-color: var(--txt-bg);
+  padding: .2rem 1rem;
+  margin-right: 2vw;
+}
+
+
+
+
+
+@media screen and (min-width: 550px) {
+  
+  h1 {
+  font-size: 2.5rem;
+  padding: .1rem 4rem;
+  }
+  
+  .clock-timers {
+    width: 480px;
+    padding: 2rem;
+    height: 650px;
+  }
+  
+  #timer-label {
+  font-size: 2rem;
+  margin-button: -.4rem;
+  }
+  
+  .display {
+    display: block;
+    padding-top: 2.5rem;
+  }  
+  
+  .display button {
+    width: 4rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  #time-left {
+    font-size: 2.4rem;
+  }
+  
+  address {
+    font-size: 1rem;
+ }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
