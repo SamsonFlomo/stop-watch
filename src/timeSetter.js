@@ -16,7 +16,7 @@ function TimeSetter (TimeSetterProps) {
   return (
     <div className="hold-btn">
       <button onClick={() => (time > min ? setTime(time - interval) : null)}
-       	      id={`${type}-drcrement`}
+       	      id={`${type}-decrement`}
        	      className="border-btn"> 
        	   <FaArrowDown />
       </button>

@@ -1,3 +1,6 @@
+import { Images } from "./images.js";
+
+
 export const DisplayState = {
   time: 0,
   timeType: "Session" | "break",
@@ -14,4 +17,13 @@ export const formatTime = (time) => {
       }
   `;
 };
+
+export const changeBackground = (id = "body") => {
+    const body = document.getElementById(id);
+    const randomNum = Math.floor(Math.random() * 7);
+    
+    if(body) {
+      body.style.backgroundImage = `url(${Images[randomNum]})`;
+    };
+  };
 

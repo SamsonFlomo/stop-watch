@@ -21,7 +21,7 @@ const Display = (DisplayProps) => {
        </span>
        
        <div className="hold-btn">
-          <button id="start-stop" onClick={ () => startStop(displayState)}>
+          <button id="start_stop" onClick={ () => startStop(displayState)}>
              {displayState.timerRunning ? <FaPause /> : <FaPlay /> }
           </button>
           
